@@ -15,7 +15,7 @@
 ## 📂 项目结构
 
 ```
-image-to-pdf-web/
+image-to-pdf/
 ├── src/
 │   ├── index.html      # 应用主页面 (HTML)
 │   ├── app.js          # 核心逻辑 (JavaScript)
@@ -32,12 +32,12 @@ image-to-pdf-web/
 
 1.  **克隆项目到本地：**
     ```bash
-    git clone https://github.com/yourusername/image-to-pdf-web.git
-    cd image-to-pdf-web
+    git clone https://github.com/Eyozy/image-to-pdf.git
+    cd image-to-pdf
     ```
 
 2.  **直接在浏览器中打开：**
-    您无需安装任何依赖或启动 Web 服务器。直接用浏览器打开 `src/index.html` 文件即可开始使用。
+    您无需安装任何依赖或启动 Web 服务器。直接用浏览器打开 `index.html` 文件即可开始使用。
     ```bash
     # Windows 用户
     start index.html
