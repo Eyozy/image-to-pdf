@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片一键转 PDF - 安全、免费、无需上传</title>
+    <meta name="description" content="快速、安全地将多张JPG、PNG图片合并转换成一个PDF文件。所有转换均在您的浏览器本地完成，无需上传文件，100%保护您的文件隐私。">
+    <meta name="keywords" content="图片转PDF, JPG转PDF, PNG转PDF, 在线转换, PDF合并, 免费PDF工具">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>图片一键转 PDF</h1>
+            <blockquote>
+                <p>您的所有文件均在本地处理，绝不上传至服务器，确保隐私安全。</p>
+            </blockquote>
+
+            <div class="upload-form">
+                <label for="imageInput" class="file-label" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <span id="fileLabelText">选择图片文件</span>
+                </label>
+                <input type="file" id="imageInput" accept="image/jpeg, image/png, image/webp" multiple aria-label="选择图片">
+                
+                <div id="fileList" class="file-list"></div>
+
+                <button id="convertButton" type="button">
+                    <span class="button-text">转换为 PDF</span>
+                    <div class="spinner"></div>
+                </button>
+                
+                <div id="statusPopup" class="status-popup"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
